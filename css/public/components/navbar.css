@@ -34,6 +34,13 @@
   margin: 0.1rem 0;
   background-color: var(--brown);
 }
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
 #action-buttons {
   display: flex;
   flex-direction: row;

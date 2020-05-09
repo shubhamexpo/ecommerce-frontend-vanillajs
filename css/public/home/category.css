@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap");
+:root {
+  --white: #ffff;
+  --black: #000;
+  --brown: rgb(92, 92, 92);
+  --light-brown: rgb(231, 231, 231);
+  --jost-font: "Jost", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* CATEGORY */
+#category {
+  margin-top: 1rem;
+}
+/* CATEGORY ITEM */
+.category-item {
+  max-width: 35rem;
+  max-height: 35rem;
+  background-color: rgb(0, 0, 0);
+}
+.category-data {
+  position: absolute;
+}
