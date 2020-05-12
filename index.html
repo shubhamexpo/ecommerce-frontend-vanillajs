@@ -1,160 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/public/home/index.css" />
-    <link rel="stylesheet" href="./css/public/components/navbar.css" />
-    <link rel="stylesheet" href="./css/public/home/banner.css" />
-    <link rel="stylesheet" href="./css/public/home/category.css" />
-    <title>LabelMN</title>
-  </head>
-  <body>
-    <!-- NAVIGATION PANNEL -->
-    <nav id="nav-bar">
-      <div id="hamberg-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <div id="logo">
-        <img src="./assets/logo.png" alt="" />
-      </div>
-      <div id="action-buttons">
-        <div class="button button-user">
-          <i class="far fa-user fa-lg"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/public/home/index.css" />
+  <link rel="stylesheet" href="./css/public/components/navbar.css" />
+  <link rel="stylesheet" href="./css/public/home/banner.css" />
+  <link rel="stylesheet" href="./css/public/home/category.css" />
+  <link rel="stylesheet" href="./css//public/components/footer.css" />
+  <link rel="stylesheet" href="./css/public/components/sidebar.css">
+  <link rel="stylesheet" href="./css/public/components/menu.css">
+  <title>LabelMN</title>
+</head>
+
+<body>
+
+  <section class="sidebar">
+    <div class="sidebar-body">
+      <div class="sidebar-header">
+        <div class="sidebar-title-container">
+          <p>Cart</p>
         </div>
-        <div class="button">
-          <i class="fas fa-search fa-lg"></i>
-        </div>
-        <div class="button">
-          <div class="total-items">
-            <p>2</p>
-          </div>
-          <i class="fas fa-shopping-basket fa-lg"></i>
+        <div class="sidebar-close-container">
+          <button class="sidebar-close">
+            X
+          </button>
         </div>
       </div>
-    </nav>
-    <!-- SLIDER BANNER  -->
-    <section id="banner">
-      <div class="move-down-button">
-        <div class="arrow-body">
-          <i class="fas fa-arrow-down fa-lg"></i>
+      <form action="#">
+        <div class="sidebar-cart-items-container">
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/1.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/2.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/3.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/3.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/3.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-cart-item">
+            <div class="sidebar-cart-product-image">
+              <img src="./assets/products/3.webp" class="sidebar-product-img" alt="">
+            </div>
+            <div class="sidebar-cart-product-data">
+              <div class="sidebar-cart-product-info">
+                <p class="sidebar-product-heading">Mid Summer</p>
+                <p class="sidebar-product-price">Rs. 449</p>
+              </div>
+              <div class="sidebar-cart-product-update">
+                <div class="sidebar-update-item">
+                  <a href="" class="item-decrement">-</a>
+                  <input type="number" value="1" class="total-item">
+                  <a href="#" class="item-increment">+</a>
+                </div>
+                <div class="sidebar-remove-item-from-cart">
+                  <a href="#" class="remove-item">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+          <p class="sidebar-text">Shipping & taxes calculated at checkout</p>
+          <button class="sidebar-checkout-product">
+            <span class="chechout-button-headind">CHECKOUT</span>.
+            <span class="checkout-total-amount-to-pay">Rs. 4,234</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu">
+    <div class="menu-header">
+      <p class="menu-close">X</p>
+    </div>
+    <div class="menu-container">
+      <nav class="menu-category-navigation">
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>UNISEX</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>CAPS</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner menu-collapse-inner-disable">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>GIRLS</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner menu-collapse-inner-disable">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>PREMIUM Tees</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner menu-collapse-inner-disable">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>BAGS& ACCESSORIES</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner menu-collapse-inner-disable">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items-collapse">
+          <button class="menu-collapse-heading">
+            <span>UNISEX</span>
+            <span class="menu-collapse-plus">+</span>
+          </button>
+          <div class="menu-collapse-inner menu-collapse-inner-disable">
+            <div class="menu-item-collapse">
+              <a href="#">REGULAR</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">BACK TO BASIC</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">SUMMER COLLECTION 2K19</a>
+            </div>
+            <div class="menu-item-collapse">
+              <a href="#">ZIPPER/HOODIES/JACKBOM</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-account">
+          <a href="#">Account</a>
+        </div>
+      </nav>
+    </div>
+    <div class="menu-footer">
+      <a href="#" class="socil-icon">
+        <i class="fab fa-facebook-f fa-lg"></i>
+      </a>
+      <a href="#" class="socil-icon">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+      <a href="#" class="socil-icon">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+  </section>
+  <!-- NAVIGATION PANNEL -->
+  <nav id="nav-bar">
+    <div id="hamberg-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div id="logo">
+      <img src="./assets/logo.png" alt="" />
+    </div>
+    <div id="action-buttons">
+      <div class="button button-user">
+        <i class="far fa-user fa-lg"></i>
+      </div>
+      <div class="button">
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+      <div class="button">
+        <div class="total-items">
+          <p>2</p>
+        </div>
+        <i class="fas fa-shopping-basket fa-lg"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- SLIDER BANNER  -->
+  <section id="banner">
+    <div class="move-down-button">
+      <div class="arrow-body">
+        <i class="fas fa-arrow-down fa-lg"></i>
+      </div>
+    </div>
+    <div class="banner-body">
+      <div class="banner-data">
+        <div class="banner-info">
+          <p class="banner-title">CHAMP :)</p>
+          <button class="banner-buttom">
+            BUY NOW
+          </button>
+        </div>
+        <div class="banner-controller">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
       </div>
-      <div class="banner-body">
-        <div class="banner-data">
-          <div class="banner-info">
-            <p class="banner-title">CHAMP :)</p>
-            <button class="banner-buttom">
-              BUY NOW
-            </button>
-          </div>
-          <div class="banner-controller">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-        <div class="banner-images">
-          <img src="./assets/banner/banner3.jpg" alt="" />
-        </div>
+      <div class="banner-images">
+        <img src="./assets/banner/banner3.jpg" alt="" />
       </div>
-    </section>
-    <!-- LIST OUT CATEGORY -->
-    <section id="category">
-      <div class="category-body">
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item1.jpg"
-            alt=""
-            class="category-image"
-          />
+    </div>
+  </section>
+  <!-- LIST OUT CATEGORY -->
+  <section id="category">
+    <div class="category-body">
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
         </div>
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item2.png"
-            alt=""
-            class="category-image"
-          />
-        </div>
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item3.jpg"
-            alt=""
-            class="category-image"
-          />
-        </div>
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item4.jpg"
-            alt=""
-            class="category-image"
-          />
-        </div>
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item5.jpg"
-            alt=""
-            class="category-image"
-          />
-        </div>
-        <div class="category-item">
-          <div class="category-data">
-            <p class="category-subtitle">SUMMERS 2K19</p>
-            <p class="category-title">COLLECTION</p>
-            <button class="view-category-button">
-              VIEW PRODUCTS
-            </button>
-          </div>
-          <img
-            src="./assets/category/item6.jpg"
-            alt=""
-            class="category-image"
-          />
-        </div>
+        <img src="./assets/category/item1.jpg" alt="" class="category-image" />
       </div>
-    </section>
-  </body>
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
+        </div>
+        <img src="./assets/category/item2.png" alt="" class="category-image" />
+      </div>
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
+        </div>
+        <img src="./assets/category/item3.jpg" alt="" class="category-image" />
+      </div>
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
+        </div>
+        <img src="./assets/category/item4.jpg" alt="" class="category-image" />
+      </div>
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
+        </div>
+        <img src="./assets/category/item5.jpg" alt="" class="category-image" />
+      </div>
+      <div class="category-item">
+        <div class="category-data">
+          <p class="category-subtitle">SUMMERS 2K19</p>
+          <p class="category-title">COLLECTION</p>
+          <button class="view-category-button">
+            VIEW PRODUCTS
+          </button>
+        </div>
+        <img src="./assets/category/item6.jpg" alt="" class="category-image" />
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-website-info">
+      <div class="footer-info">
+        <p class="footer-heading">REACH US</p>
+        <p class="footer-text">
+          Phone - 8889223366 MON-SAT (11 AM to 7 PM)
+        </p>
+        <p class="footer-text">
+          Address - 303 , VIVEK TOWER , E5/21 BITTAN MARKET , BHOPAL (M.P.)
+          462016
+        </p>
+        <p class="footer-text">
+          E-mail -labelmnclothing@gmail.com
+        </p>
+      </div>
+      <div class="footer-info">
+        <p class="footer-heading">LEGAL</p>
+        <a href="#" class="footer-link">
+          Exchange & Refund
+        </a>
+        <a href="#" class="footer-link">
+          Privacy Statement
+        </a>
+        <a href="#" class="footer-link">Privacy Statement</a>
+        <a href="#" class="footer-link">TERMS OF SERVICE</a>
+        <a href="#" class="footer-link">RETURN POLICY</a>
+        <a href="#" class="footer-link">REFUND AND CANCELLATION POLICY</a>
+      </div>
+      <div class="footer-info">
+        <p class="footer-heading">USEFUL LINKS</p>
+        <a href="#" class="footer-link">
+          Bulk Order
+        </a>
+        <a href="#" class="footer-link">
+          Sizing Information
+        </a>
+        <a href="#" class="footer-link">RETAILERs</a>
+        <a href="#" class="footer-link">Track Your Order</a>
+      </div>
+    </div>
+    <div class="footer-website-connect">
+      <div class="footer-social-icons">
+        <p class="social-icon-heading">FOLLOW US @</p>
+        <a href="#" class="socil-icon"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="socil-icon"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="socil-icon"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+      <div class="footer-newsletter">
+        <p class="newsletter-heading">Newsletter</p>
+        <p class="newsletter-text">
+          Subscribe to receive updates, access to exclusive deals, and more.
+        </p>
+        <form action="#" class="form-container">
+          <input type="email" class="form-input" placeholder="Enter your email address" />
+          <button type="submit" class="form-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="ending-footer">
+      <p class="ending-footer-text">
+        © 2020, LabelMN|Developed & Managed By</br>
+        <span><a href="#">Shubham Kumar Dubey</a></span>
+      </p>
+      <div class="footer-cards">
+        <img src="./assets/american-express.png" alt="" class="pay-card" />
+        <img src="./assets/master-card.png" alt="" class="pay-card" />
+        <img src="./assets/visa.png" alt="" class="pay-card" />
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
