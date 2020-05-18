@@ -43,8 +43,8 @@ label {
   grid-gap: 1rem;
   padding-right: 2rem;
 }
-.media-item > img,
-.media-item > video {
+.media-item > a > img,
+.media-item > a > video {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -158,8 +158,8 @@ label {
     flex-direction: row;
     overflow: scroll;
   }
-  .media-item > img,
-  .media-item > video {
+  .media-item > a > img,
+  .media-item > a > video {
     max-width: 80vw;
     height: 80vh;
     object-fit: cover;
@@ -198,8 +198,8 @@ label {
   .product-detail-body {
     padding: 1rem;
   }
-  .media-item > img,
-  .media-item > video {
+  .media-item > a > img,
+  .media-item > a > video {
     max-width: 80vw;
     height: 80vh;
     object-fit: cover;
